@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anayemek</title>
+</head>
+
+<body onload="anayemek()" style="background-image: url(et.jpg); background-position:center; text-align: center;">
+    <div id="sonuc" style="background-color: #8080806e ; color: #ff6600; font-size: 27px; font-weight: bold; text-shadow: 1px 4px 2px black; font-style: italic;"></div>
+    <script>
+        function anayemek(){
+        var istek = new XMLHttpRequest();
+        istek.onreadystatechange = function(){
+            if(this.readyState == 4 && this.status == 200){
+                var jsondeger = JSON.parse(this.responseText);
+                var metin     = "";
+                var setdegeri = jsondeger.anayemek;
+                var setuzunlugu = setdegeri.length;
+                    for(var baslangic = 0; baslangic < setuzunlugu; baslangic++){
+                        metin += "Yemek Adı: "+ setdegeri[baslangic].Yiyecek + "<br />Fiyat: " + setdegeri[baslangic].fiyat +"<br /><br /> --------------- <br />" 
+                    }
+                    document.getElementById("sonuc").innerHTML = metin;
+            }else{
+                document.getElementById("sonuc").innerHTML = "Bilinmeyen Bir Hata Oluştu !"
+            }
+        };
+        istek.open("GET","anayemek.json",true);
+        istek.send();
+        
+    }
+    </script>
+    
+</body>
+</html>

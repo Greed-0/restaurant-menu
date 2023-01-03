@@ -1,0 +1,32 @@
+{
+    "icecek":[
+        {
+            "Icecek":"Coca-Cola (33 cl.)",
+            "fiyat":"30 ₺"
+        },
+        {
+            "Icecek":"Coca-Cola Light (33 cl.)",
+            "fiyat":"30 ₺"
+        },
+        {
+            "Icecek":"Coca-Cola Şekersiz (33 cl.)",
+            "fiyat":"30 ₺"
+        },
+        {
+            "Icecek":"Fanta (33 cl.)",
+            "fiyat":"30"
+        },
+        {
+            "Icecek":"Sprite",
+            "fiyat":"30 ₺"   
+        },
+        {
+            "Icecek":"Cappy",
+            "fiyat":"30 ₺"
+        },
+        {
+            "Icecek":"Fuse Tea",
+            "fiyat":"30 ₺"
+        }
+    ]
+}

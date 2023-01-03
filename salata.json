@@ -1,0 +1,17 @@
+{
+    "salad":[
+        {
+            "Salata":"Gavurdağı Salata",
+            "fiyat":"45 ₺"
+        },
+        {
+            "Salata":"Çoban Salata",
+            "fiyat":"45 ₺"
+        },
+        {
+            "Salata":"Tavuklu Salata",
+            "fiyat":"45 ₺"
+        }
+        
+    ]
+}

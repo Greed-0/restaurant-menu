@@ -1,0 +1,32 @@
+{
+    "anayemek":[
+        {
+            "Yiyecek":"Karışık Kebap",
+            "fiyat":"170 ₺"
+        },
+        {
+            "Yiyecek":"6'lı Lahmacun Menü",
+            "fiyat":"225 ₺"
+        },
+        {
+            "Yiyecek":"Sarma Beyti Kebap",
+            "fiyat":"155 ₺"
+        },
+        {
+            "Yiyecek":"Adana Kebap",
+            "fiyat":"140 ₺"
+        },
+        {
+            "Yiyecek":"Karışık Kebap",
+            "fiyat":"170 ₺"   
+        },
+        {
+            "Yiyecek":"Urfa Kebap",
+            "fiyat":"140 ₺"
+        },
+        {
+            "Yiyecek":"Tavuksuz Vali Kebabı (2 kişilik)",
+            "fiyat":"525 ₺"
+        }
+    ]
+}

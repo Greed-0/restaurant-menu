@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoşgeldiniz</title>
+    <style>
+        .renk:hover{
+            background-color: #ff6600;
+            color: black;
+        }
+      </style>
+
+</head><br><br><br><br><br><br>
+
+<div id="hosgeldiniz" style="text-align: center; font-weight: bold; font-size: 40px; padding-left: 50px; background-color: #8080806e; text-shadow: 1px 5px 3px black; "><marquee style="color: #ff6600;">X Restaurantına Hoşgeldiniz</marquee></div><br><br><br><br><br>
+<!-- <select style="background-color:bisque; font-size: 25px; font-style: inherit; font-weight: bold; color: #ff6600; box-shadow: 1px 7px 10px black; padding-bottom: 10px; padding-top: 10px; padding-left: 10px; padding-right: 10px; text-shadow: 1px 3px 5px black;" >
+    <option >Kataloğunuzu Seçiniz</option>
+    <option  style="font-weight: bold; font-style: italic; text-shadow: 1px 3px 5px black; background-color: black;"><a href="anayemek.html">Ana Yemek</a></option>
+    <option  style="font-weight: bold; font-style: italic; text-shadow: 1px 3px 5px black; background-color: black;"><a href="salata.html">Salatalar</a></option>
+    <option  style="font-weight: bold; font-style: italic; text-shadow: 1px 3px 5px black; background-color: black;"><a href="icecek.html">İçecekler</a></option>
+</select> -->
+<button class="renk" onclick="window.location='anayemek.html'" style="background-color: black; color: #ff6600; font-size: 20px; border: 2px solid white; box-shadow: 1px 9px 5px black;">Ana Yemek</button><br><br>
+<button class="renk" onclick="window.location='icecek.html'" style="background-color: black; color: #ff6600; font-size: 20px; border: 2px solid white; box-shadow: 1px 9px 5px black;">İçecek</button><br><br>
+<button class="renk" onclick="window.location='salata.html'" style="background-color: black; color: #ff6600; font-size: 20px; border: 2px solid white; box-shadow: 1px 9px 5px black;">Salata</button>
+
+<body style="background-image: url(et.jpg); background-position:center; text-align: center;">
+    <br><br><br>
+         <div id ="Saat" style="font-size: 30px; font-weight: bold; color: black; text-shadow: 1px 5px 2px #ff6600; background-color: #8080806e ; padding-top: -20px; "></div>
+        <script> 
+        const clockElement = document.querySelector("#Saat");
+        setInterval(() => {const time = new Date();
+            clockElement.style.fontSize = "30px";
+        const hours = time.getHours();
+        const minutes = time.getMinutes();
+        const seconds = time.getSeconds();
+        const zamandamgasi = Date.now()
+        const clockString = `
+        Saat 
+        ${hours} : ${minutes} : ${seconds}
+        ` ;    
+     
+        clockElement.innerText = clockString;
+      }, 0);
+    
+    
+    </script>
+</body>
+</html>
